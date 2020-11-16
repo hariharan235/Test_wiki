@@ -17,7 +17,7 @@ pipeline
   {
    failure
    {
-      emailext attachLog: true, body: "Please check ${env.BUILD_URL}', recipientProviders:[requestor()], subject: 'Failed : ${currentBuild.fullDisplayName}'
+      emailext attachLog: true, body: 'Please check ${env.BUILD_URL}', recipientProviders:[requestor()], subject: 'Failed : ${currentBuild.fullDisplayName}'
    }
   }
 }
