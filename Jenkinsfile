@@ -15,6 +15,7 @@ pipeline
        checkout scm
        sh 'ls -al'
       }
+    }
   }
   post
   {
