@@ -4,14 +4,17 @@ pipeline
   options
   {
     timestamps()
+    skipDefaultCheckout()
   }
-  stage('checkout from scm')
+  stages
   {
-    steps
+    stage('checkout from scm')
     {
+      steps
+      {
        checkout scm
        sh 'ls -al'
-    }
+      }
   }
   post
   {
