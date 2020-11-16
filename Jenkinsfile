@@ -1,6 +1,6 @@
 pipeline
 {
-  agent {label 'node-raspberrypi3'}
+  agent {label 'master'}
   options
   {
     timestamps()
